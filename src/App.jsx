@@ -1,9 +1,12 @@
 // import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./layouts/AppLayout";
-import Home from "./pages/Home";
+import Home from "./pages/app/Home";
 import RootLayout from "./layouts/RootLayout";
 import LandingPages from "./pages/LandingPages";
+import Calculator from "./pages/app/Calculator";
+import Shopping from "./pages/app/Shopping";
+import MyProfile from "./pages/app/MyProfile";
 
 export default function App() {
     const router = createBrowserRouter([
@@ -24,6 +27,18 @@ export default function App() {
                 {
                     path: "/app",
                     element: <Home />,
+                },
+                {
+                    path: "/app/calculator",
+                    element: <Calculator />,
+                },
+                {
+                    path: "/app/shop",
+                    element: <Shopping />,
+                },
+                {
+                    path: "/app/profile",
+                    element: <MyProfile />,
                 },
             ],
         },
