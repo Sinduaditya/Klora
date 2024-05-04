@@ -4,6 +4,15 @@ export default {
     theme: {
         extend: {
             colors: {
+                text: "#010922",
+                background: "#EBEBEB",
+                label: "#AED4DB",
+                buttonPrimary: "#237322",
+                outline: "#8AD1D2",
+                subText: "#D9D9D9",
+                card: "#0B0F2F",
+                cardSecondary: "rgba(49, 41, 100, 0.2)",
+                buttonSecondary: "#8F8FDB",
                 primary: {
                     50: "#f2fbf2",
                     100: "#e1f8e0",
