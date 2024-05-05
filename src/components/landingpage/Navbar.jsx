@@ -1,43 +1,43 @@
 import {Link} from "react-router-dom";
 
 const menus = [
-  { name: "Why Klora ?", href: "/about" },
-  // { name: "Test", href: "/pricing" },
+  { name: "About", href: "/about" },
+  { name: "Contact Us", href: "/contact" },
   // { name: "Test", href: "/contact" },
 ];
 
+// eslint-disable-next-line react/prop-types
 function Navbar({ bg }) {
   return (
       <div
-        className={`w-full text-text fixed h-[100px] z-40 ${
-          bg > 80 ? "bg-background" : "bg-transparent"
-        }`}
+        className="w-full text-text  h-[100px] z-40 bg-background"
       >
         <div className="xl:max-w-5xl mx-auto flex flex-row justify-between h-[100px] items-center px-10 xl:px-0">
-          <h1 className="text-[20px]  font-bold text-xl tracking-wider leading-[27.5]">
+          <h1 className="font-bold z-10 text-4xl">
             Klora
           </h1>
-          <ul className="hidden md:flex md:flex-row  md:space-x-4 md:items-center">
+          <ul className="flex gap-5">
             {menus.map((menu, index) => (
                 <li className="font-semibold" key={menu.name}>
-                  <Link href={menu.href}>{menu.name}</Link>
+                  <Link to={menu.href}>{menu.name}</Link>
                 </li>
             ))}
+          </ul>
+          <ul className="hidden md:flex md:flex-row  md:space-x-3 md:items-center">
             <li className="font-semibold tracking-widest text-white">
-              <Link
-                  href="#"
-                  className="py-2 px-8 bg-primary-700  rounded-full"
+              <button
+                  className="py-[6px] px-8 bg-primary-700 rounded-full"
               >
-                <span>Login</span>
-              </Link>
+                <span>Masuk</span>
+              </button>
             </li>
+
             <li className="font-semibold tracking-widest text-white">
-              <Link
-                  href="#"
-                  className="py-2 px-8 bg-primary-700 rounded-full"
+              <button
+                  className="py-[6px] px-8 bg-primary-700  rounded-full"
               >
-                <span>Register</span>
-              </Link>
+                <span>Daftar</span>
+              </button>
             </li>
           </ul>
           <img

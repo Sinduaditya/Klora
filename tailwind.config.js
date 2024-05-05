@@ -5,7 +5,7 @@ export default {
         extend: {
             colors: {
                 text: "#010922",
-                background: "#EBEBEB",
+                background: "#FFFFFF",
                 label: "#AED4DB",
                 buttonPrimary: "#237322",
                 outline: "#8AD1D2",
