@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { HiHome, HiCalculator, HiShoppingBag, HiUser } from "react-icons/hi2";
+import { Home, Calculator, Shop, UserSquare } from "iconsax-react";
 
 function BottomNav() {
     const location = useLocation();
@@ -24,7 +24,10 @@ function BottomNav() {
                             onClick={() => handleSetActivePage("/app")}
                         >
                             <Link to="/app" className="grid gap-1">
-                                <HiHome className="w-6 h-6 mx-auto " />
+                                <Home
+                                    className="w-6 h-6 mx-auto "
+                                    variant="Bulk"
+                                />
                                 <p className="text-center text-xs">Beranda</p>
                             </Link>
                         </li>
@@ -39,7 +42,10 @@ function BottomNav() {
                             }
                         >
                             <Link to="/app/calculator" className="grid gap-1">
-                                <HiCalculator className="w-6 h-6 mx-auto " />
+                                <Calculator
+                                    className="w-6 h-6 mx-auto "
+                                    variant="Bulk"
+                                />
                                 <p className="text-center text-xs">
                                     Kalkulator
                                 </p>
@@ -54,7 +60,10 @@ function BottomNav() {
                             onClick={() => handleSetActivePage("/app/shop")}
                         >
                             <Link to="/app/shop" className="grid gap-1">
-                                <HiShoppingBag className="w-6 h-6 mx-auto " />
+                                <Shop
+                                    className="w-6 h-6 mx-auto "
+                                    variant="Bulk"
+                                />
                                 <p className="text-center text-xs">Belanja</p>
                             </Link>
                         </li>
@@ -67,7 +76,10 @@ function BottomNav() {
                             onClick={() => handleSetActivePage("/app/profile")}
                         >
                             <Link to="/app/profile" className="grid gap-1">
-                                <HiUser className="w-6 h-6 mx-auto " />
+                                <UserSquare
+                                    className="w-6 h-6 mx-auto "
+                                    variant="Bulk"
+                                />
                                 <p className="text-center text-xs">Profil</p>
                             </Link>
                         </li>
