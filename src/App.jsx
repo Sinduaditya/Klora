@@ -7,6 +7,8 @@ import LandingPages from "./pages/LandingPage/LandingPages.jsx";
 import Calculator from "./pages/app/Calculator";
 import Shopping from "./pages/app/Shopping";
 import MyProfile from "./pages/app/MyProfile";
+import Login from "./pages/auth/Login.jsx";
+import Signup from "./pages/auth/Signup.jsx";
 
 export default function App() {
     const router = createBrowserRouter([
@@ -20,6 +22,7 @@ export default function App() {
                 },
             ],
         },
+
         {
             path: "/app",
             element: <AppLayout />,

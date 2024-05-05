@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {Link} from "react-router-dom";
+
 
 function Section({ data }) {
   useEffect(() => {
@@ -37,15 +37,9 @@ function Section({ data }) {
         <h1 className="leading-[110%] font-bold text-[3rem] xl:text-[4rem] text-text">
           {data.heading}
         </h1>
-        <p className="font-light text-[18px] xl:text-[20px] leading-[27.5px]">
+        <p className="ftext-xl mt-10">
           {data.desc}
         </p>
-        <Link
-            href={`/${data.button}`}
-            className="leading-[27.5px] font-[600] text-[15px] xl:text-[20px] uppercase bg-primary-700 text-background xl:content-start content-center py-3 px-4 xl:px-7 w-fit rounded-full"
-        >
-          {data.button}
-        </Link>
       </article>
     </div>
   );
