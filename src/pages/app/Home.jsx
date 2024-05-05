@@ -7,11 +7,12 @@ import TopBarHome from "../../components/app/Home/TopBarHome";
 function Home() {
     return (
         <>
-            <div>Home</div>
-            <TopBarHome />
-            <DisplayTasHome />
-            <DisplayBotolHome />
-            <NearModHome />
+            <div className="grid gap-3">
+                <TopBarHome />
+                <DisplayTasHome />
+                <DisplayBotolHome />
+                <NearModHome />
+            </div>
         </>
     );
 }
