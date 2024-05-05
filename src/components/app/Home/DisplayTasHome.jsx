@@ -52,12 +52,6 @@ function DisplayTasHome() {
                             className="rounded-3xl"
                         />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                            src="https://swiperjs.com/demos/images/nature-6.jpg"
-                            className="rounded-3xl"
-                        />
-                    </SwiperSlide>
                 </Swiper>
             </div>
         </>
