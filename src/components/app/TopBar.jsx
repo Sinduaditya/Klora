@@ -1,10 +1,10 @@
 // import React from "react";
 import { Moneys, Bitcoin } from "iconsax-react";
 
-function TopBarHome() {
+function TopBar() {
     return (
         <>
-            <div className="flex justify-between ">
+            <div className="flex justify-between px-3 py-4 border overflow-x-auto">
                 {/* Profil User */}
                 <div className="w-12 h-12 rounded-full border ">
                     <img
@@ -50,4 +50,4 @@ function TopBarHome() {
     );
 }
 
-export default TopBarHome;
+export default TopBar;
