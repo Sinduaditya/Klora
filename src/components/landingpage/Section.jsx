@@ -30,14 +30,15 @@ function Section({ data }) {
         className="object-contain xl:w-[452.5px] xl:h-[541px] w-[276.3px] h-[305px] md:w-[350px] md:h-[400px]"
       />
       <article
-          className="flex flex-col space-y-6 xl:mt-0 mt-8 xl:items-start text-center md:text-start items-center md:items-start">
-        <h2 className="text-[20px] font-bold  uppercase text-text">
+          className="flex flex-col space-y-6 pl-2 xl:mt-0 mt-8 xl:items-start text-center md:text-start items-center md:items-start">
+        <h2 className="text-[20px] font-bold uppercase text-text border-b-4 border-buttonPrimary">
           {data.subHeading}
         </h2>
+
         <h1 className="leading-[110%] font-bold text-[3rem] xl:text-[4rem] text-text">
           {data.heading}
         </h1>
-        <p className="ftext-xl mt-10">
+        <p className="text-xl lg:pr-7 pr-7 mt-10">
           {data.desc}
         </p>
       </article>
