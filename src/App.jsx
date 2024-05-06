@@ -10,6 +10,7 @@ import MyProfile from "./pages/app/MyProfile";
 import Login from "./pages/auth/Login.jsx";
 import Signup from "./pages/auth/Signup.jsx";
 
+
 export default function App() {
     const router = createBrowserRouter([
         {

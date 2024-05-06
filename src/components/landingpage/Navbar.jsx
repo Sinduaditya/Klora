@@ -14,7 +14,7 @@ function Navbar({ bg }) {
       >
         <div className="xl:max-w-5xl mx-auto flex flex-row justify-between h-[100px] items-center px-10 xl:px-0">
           <h1 className="font-bold z-10 text-4xl">
-            Klora
+            <Link to="/">Klora</Link>
           </h1>
           <ul className="flex gap-5">
             {menus.map((menu, index) => (
@@ -24,17 +24,17 @@ function Navbar({ bg }) {
             ))}
           </ul>
           <ul className="hidden md:flex md:flex-row  md:space-x-3 md:items-center">
-            <li className="font-semibold tracking-widest text-white">
+            <li className="font-semibold  text-white">
               <button
-                  className="py-[6px] px-8 bg-primary-700 rounded-full"
+                  className="py-[6px] px-8 bg-buttonPrimary rounded-full"
               >
                 <span>Masuk</span>
               </button>
             </li>
 
-            <li className="font-semibold tracking-widest text-white">
+            <li className="font-semibold  text-white">
               <button
-                  className="py-[6px] px-8 bg-primary-700  rounded-full"
+                  className="py-[6px] px-8 bg-buttonPrimary  rounded-full"
               >
                 <span>Daftar</span>
               </button>
