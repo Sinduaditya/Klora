@@ -1,4 +1,3 @@
-import DisplayBotolHome from "../../components/app/Home/DisplayBotolHome";
 import DisplayTasHome from "../../components/app/Home/DisplayTasHome";
 import NearModHome from "../../components/app/Home/NearModHome";
 import TopBarHome from "../../components/app/Home/TopBarHome";
@@ -10,7 +9,6 @@ function Home() {
             <div className="grid gap-3">
                 <TopBarHome />
                 <DisplayTasHome />
-                <DisplayBotolHome />
                 <NearModHome />
             </div>
         </>
