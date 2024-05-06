@@ -2,15 +2,21 @@
 const faqData = [
     {
         id: 1,
-        question: 'Bagaimana cara bergabung dengan klora menjadi seorang volunteer yang akan menerima botol?',
-        answer: 'Dengan Cara lsfnkgksfngls gnfs gjnsn jasdflkngslg!',
+        question: 'Bagaimana cara bergabung dengan klora menjadi seorang volunteer yang akan menerima botol sekali pakai?',
+        answer: 'Dengan Cara melakukan pendaftaran di bagian Contact Us',
     },
     {
         id: 2,
         question: 'Apa yang saya dapatkan ketika bergabung sebagai user di Klora ?',
-        answer: 'Yang anda dapatkan adalah kemudahan menjual botol air minum sekali pakai yang langsung terhubung dengan para volunteer kami yang sekarang terebar di semarang' +
+        answer: 'Yang anda dapatkan adalah kemudahan menjual botol air minum sekali pakai yang langsung terhubung dengan para volunteer kami yang  tersebar di semarang' +
             ', dan ketika anda menjual botol anda maka akan mendapatkan token utilitas yang dapat di tukar dengan crypto curency KLO!',
     },
+    {
+        id:3,
+        question: 'Apakah dengan mengupgrade NFT maka akan menaikan nilai tukar Utilitas BTL saya ?',
+        answer: 'Benar sekali, dengan anda membeli NFT secara tidak langsung anda akan langsung berkontribusi terhadap penanaman pohon yang ada di hutan konservasi dari KLORA dan pastinya juga akan meningkatkan nilai tukar ' +
+            'Utilitas BTL terhadap koin KLO !'
+    }
 
 ];
 

@@ -3,7 +3,7 @@ import {
     AreYouReady,
     Footer,
     Hero,
-    Solutions, Problem, FAQPage
+    Solutions, Problem, FAQPage, Roadmap
 } from "../../components/landingpage/index.jsx";
 
 
@@ -18,6 +18,7 @@ export default function LandingPages() {
                     <Problem/>
                     <Solutions/>
                     <Klora/>
+                    <Roadmap/>
                     <FAQPage/>
                     <AreYouReady/>
                     <Footer/>

@@ -69,7 +69,7 @@ const Calculator = () => {
                 </div>
             ))}
             <button
-                className="w-full py-2 px-4 bg-primary-500 text-white rounded-md hover:bg-primary-600 transition duration-300"
+                className="w-full py-2 px-4 mt-4 bg-buttonPrimary text-white rounded-md hover:bg-primary-600 transition duration-300"
                 onClick={handleCalculate}
             >
                 Hitung Sekarang
