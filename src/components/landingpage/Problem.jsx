@@ -25,9 +25,8 @@ function Problem() {
                             Permasalahan
                         </h1>
                         <h1 className="text-[2rem] tracking-tight text-center md:text-[3rem] font-bold leading-[110%] mt-5">
-                            "Setiap tahun, <br />
-                            masyarakat menghasilkan lebih dari 1.3 juta ton
-                            sampah botol plastik."
+                            Indonesia menghasilkan lebih dari <span className="bg-primary-200 px-3">1.3 Juta ton </span>
+                            sampah botol plastik setiap tahunnya
                         </h1>
                         <p className="text-center text-xl mt-10">
                             Sampah plastik yang tidak terkelola dengan baik

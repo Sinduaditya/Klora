@@ -38,11 +38,8 @@ export default function Solutions() {
     return (
         <>
             <div className="mt-24 md:pt-5 w-full text-text">
-                <h1 className="text-xl font-semibold text-black text-center md:text-[20px]">
-                    Apa yang kami berikan ?
-                </h1>
                 <h1 className="text-[2rem] tracking-tight text-center md:text-[3rem] font-bold text-buttonPrimary leading-[110%] mt-5">
-                    Klora Solutions !
+                    Our Solutions
                 </h1>
 
                 <div className="xl:max-w-5xl mx-auto space-y-14 px-10 xl:px-0">

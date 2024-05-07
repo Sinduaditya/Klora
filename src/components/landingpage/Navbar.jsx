@@ -34,12 +34,12 @@ function Navbar({ bg }) {
                         </button>
                     </li>
                 </ul>
-                <img
-                    src="/hamburger_menu.svg"
-                    width={25}
-                    height={20}
-                    className="md:hidden cursor-pointer"
-                />
+                {/*<img*/}
+                {/*    src="/hamburger_menu.svg"*/}
+                {/*    width={25}*/}
+                {/*    height={20}*/}
+                {/*    className="md:hidden cursor-pointer"*/}
+                {/*/>*/}
             </div>
         </div>
     );

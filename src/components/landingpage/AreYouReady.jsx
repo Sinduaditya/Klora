@@ -16,7 +16,7 @@ function AreYouReady() {
         <button
             className="w-fit  py-2 px-5 text-white font-semibold bg-primary-700 rounded-full"
         >
-          Hubungi Kami
+          Join Now
         </button>
       </div>
     </div>
