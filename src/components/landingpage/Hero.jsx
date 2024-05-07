@@ -13,16 +13,17 @@ function Hero() {
 
     return (
         <div className="w-full text-text font-outfit md:pt-[1vh] mb-12">
-            <div className="xl:max-w-5xl mx-auto grid lg:flex lg:flex-row lg:justify-between items-center  space-x-10 px-10 xl:px-0 flex-col-reverse w-fit">
-                <article className="flex order-2 md:order-1 flex-col space-y-8 text-center lg:text-left mx-auto">
-                    <h1 className="text-5xl lg:text-7xl  font-bold text-neutral-900 leading-[110%] tracking-tigh">
+            <div className="xl:max-w-5xl mx-auto grid lg:flex lg:flex-row lg:justify-between gap-4 items-center px-10 xl:px-0 w-fit border border-black">
+                <article className="grid gap-2 order-2 lg:order-1  text-center lg:text-left mx-auto border border-black">
+                    <h1 className="text-2xl md:text-4xl lg:text-7xl  font-bold text-neutral-900 leading-[110%] tracking-tigh">
                         Tukar <i>botol</i> sekali pakai <br /> menjadi{" "}
                         <span className="bg-primary-200 italic">
                             Token Utility.{" "}
                         </span>
                     </h1>
-                    <p className="font-outfit font-normal text-neutral-600 text-2xl leading-[110%]">
-                        Mulai langkah awalmu dalam mengurangi emisi karbon dan menjaga Iklim <br/>bersama klora
+                    <p className="font-outfit font-normal text-neutral-600 text-md md:text-2xl leading-[110%]">
+                        Mulai langkah awalmu dalam mengurangi emisi karbon dan
+                        menjaga Iklim <span className=""> bersama klora</span>
                     </p>
                     <div className="">
                         <button className="w-fit py-3 px-5 text-white font-semibold bg-primary-700 hover:bg-primary-800 rounded-full">
@@ -37,7 +38,7 @@ function Hero() {
                     height={467}
                     data-aos="zoom-in-up"
                     data-aos-duration="1000"
-                    className="-mr-10 w-[250.5px] h-[230px] md:w-[495px] md:h-[467px] md:order-2 "
+                    className="w-[250.5px] h-[230px] md:w-[495px] md:h-[467px] lg:order-2 border border-black mx-auto"
                 />
             </div>
         </div>
