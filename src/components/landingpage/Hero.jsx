@@ -13,8 +13,8 @@ function Hero() {
 
     return (
         <div className="w-full text-text font-outfit md:pt-[1vh] mb-12">
-            <div className="xl:max-w-5xl mx-auto grid lg:flex lg:flex-row lg:justify-between gap-4 items-center px-10 xl:px-0 w-fit border border-black">
-                <article className="grid gap-2 order-2 lg:order-1  text-center lg:text-left mx-auto border border-black">
+            <div className="xl:max-w-5xl mx-auto grid lg:flex lg:flex-row lg:justify-between gap-4 items-center px-10 xl:px-0 w-fit ">
+                <article className="grid gap-2 order-2 lg:order-1  text-center lg:text-left mx-auto ">
                     <h1 className="text-2xl md:text-4xl lg:text-7xl  font-bold text-neutral-900 leading-[110%] tracking-tigh">
                         Tukar <i>botol</i> sekali pakai <br /> menjadi{" "}
                         <span className="bg-primary-200 italic">
@@ -38,7 +38,7 @@ function Hero() {
                     height={467}
                     data-aos="zoom-in-up"
                     data-aos-duration="1000"
-                    className="w-[250.5px] h-[230px] md:w-[495px] md:h-[467px] lg:order-2 border border-black mx-auto"
+                    className="w-[250.5px] h-[230px] md:w-[495px] md:h-[467px] lg:order-2  mx-auto"
                 />
             </div>
         </div>
