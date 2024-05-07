@@ -13,9 +13,9 @@ function Hero() {
 
     return (
         <div className="w-full text-text font-outfit md:pt-[1vh] mb-12">
-            <div className="xl:max-w-5xl mx-auto flex md:flex-row md:justify-between items-center  space-x-10 px-10 xl:px-0 flex-col-reverse">
-                <article className="flex flex-col space-y-8 text-center md:text-left">
-                    <h1 className="text-7xl font-bold text-neutral-900 leading-[110%] tracking-tigh">
+            <div className="xl:max-w-5xl mx-auto grid lg:flex lg:flex-row lg:justify-between items-center  space-x-10 px-10 xl:px-0 flex-col-reverse w-fit">
+                <article className="flex flex-col space-y-8 text-center lg:text-left mx-auto">
+                    <h1 className="text-5xl lg:text-7xl font-bold text-neutral-900 leading-[110%] tracking-tigh">
                         Tukar <i>botol</i> sekali pakai <br /> menjadi{" "}
                         <span className="bg-primary-200 underline italic">
                             token utilitas.{" "}
