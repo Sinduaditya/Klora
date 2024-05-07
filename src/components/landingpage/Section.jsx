@@ -31,7 +31,7 @@ function Section({ data }) {
       />
       <article
           className="flex flex-col space-y-6 pl-2 xl:mt-0 mt-8 xl:items-start text-center md:text-start items-center md:items-start">
-        <h2 className="text-[20px] font-bold uppercase text-text border-b-4 border-buttonPrimary">
+        <h2 className="text-[20px] font-bold uppercase text-text border-b-4 border-primary-700">
           {data.subHeading}
         </h2>
 

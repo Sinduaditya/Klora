@@ -38,7 +38,7 @@ export default function Solutions() {
     return (
         <>
             <div className="mt-24 md:pt-5 w-full text-text">
-                <h1 className="text-[2rem] tracking-tight text-center md:text-[3rem] font-bold text-buttonPrimary leading-[110%] mt-5">
+                <h1 className="text-[2rem] tracking-tight text-center md:text-[3rem] font-bold text-primary-700 leading-[110%] mt-5">
                     Our Solutions
                 </h1>
 

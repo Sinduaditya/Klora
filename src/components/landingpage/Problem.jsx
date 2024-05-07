@@ -5,15 +5,15 @@ function Problem() {
     const trash = [
         {
             id: 1,
-            img: "https://via.placeholder.com/150",
+            img: "/botol.jpg",
         },
         {
             id: 2,
-            img: "https://via.placeholder.com/150",
+            img: "/botol2.jpg",
         },
         {
             id: 3,
-            img: "https://via.placeholder.com/150",
+            img: "/botol3.jpg",
         },
     ];
     return (
@@ -25,7 +25,8 @@ function Problem() {
                             Permasalahan
                         </h1>
                         <h1 className="text-[2rem] tracking-tight text-center md:text-[3rem] font-bold leading-[110%] mt-5">
-                            Indonesia menghasilkan lebih dari <span className="bg-primary-200 px-3">1.3 Juta ton </span>
+                            Indonesia menghasilkan lebih dari <br/> <span
+                            className="bg-primary-200 px-3">2.4 Miliar</span>
                             sampah botol plastik setiap tahunnya
                         </h1>
                         <p className="text-center text-xl mt-10">
@@ -42,7 +43,7 @@ function Problem() {
                             key={index}
                             alt=""
                             src={item.img}
-                            className="h-56 rounded shadow sm:h-48 lg:h-56 w-full object-cover"
+                            className="h-56 rounded-lg shadow sm:h-48 lg:h-56 w-full object-cover"
                         />
                     ))}
                 </article>

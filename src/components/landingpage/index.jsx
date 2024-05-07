@@ -9,5 +9,6 @@ import Solutions from "./Solutions.jsx";
 import Problem from "./Problem.jsx";
 import FAQPage from "./Faq.jsx";
 import Roadmap from "./Rute.jsx";
+import FourOhFourOhFour from "../../pages/404.jsx";
 
-export { Navbar, Hero, Roadmap, Section, Solutions, Problem, FAQPage, AreYouReady, Card, Footer, Klora };
+export { Navbar, Hero, Roadmap, Section, Solutions, FourOhFourOhFour, Problem, FAQPage, AreYouReady, Card, Footer, Klora };

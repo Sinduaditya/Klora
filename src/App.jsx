@@ -9,6 +9,7 @@ import Shopping from "./pages/app/Shopping";
 import MyProfile from "./pages/app/MyProfile";
 import Login from "./pages/auth/Login.jsx";
 import Signup from "./pages/auth/Signup.jsx";
+import {FourOhFourOhFour} from "./components/landingpage/index.jsx";
 
 
 export default function App() {
@@ -20,6 +21,18 @@ export default function App() {
                 {
                     path: "/",
                     element: <LandingPages />,
+                },
+                {
+                    path: "/login",
+                    element: <Login />,
+                },
+                {
+                    path: "/signup",
+                    element: <Signup />,
+                },
+                {
+                    path: "*",
+                    element: <FourOhFourOhFour />,
                 },
             ],
         },
