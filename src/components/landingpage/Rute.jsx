@@ -1,8 +1,8 @@
 const Roadmap = () => {
     return (
-        <div className="p-4 mt-16">
+        <div id="#how" className="p-4 mt-16">
             <div className="text-center text-text mb-12 ">
-                <h1 className="text-4xl font-bold mb-2 text-buttonPrimary">How it works</h1>
+                <h1 className="text-4xl font-bold mb-2 text-primary-700">How it works</h1>
                 <p className="font-medium text-lg">Alur ini akan menjelaskan bagaimana user mendapatkan Currency dari
                     pertukaran botol ke Volunteer Klora</p>
             </div>
@@ -23,19 +23,19 @@ const Roadmap = () => {
                     <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                         <div className="flex items-center justify-center w-6 h-full">
                             <div
-                                className="w-1 h-full bg-buttonPrimary rounded-t-full "></div>
+                                className="w-1 h-full bg-primary-700 rounded-t-full "></div>
                         </div>
                         <div
-                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-buttonPrimary rounded-full top-1/2"/>
+                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-primary-700 rounded-full top-1/2"/>
                     </div>
                 </div>
                 <div className="flex md:contents">
                     <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                         <div className="flex items-center justify-center w-6 h-full">
-                            <div className="w-1 h-full bg-buttonPrimary"/>
+                            <div className="w-1 h-full bg-primary-700"/>
                         </div>
                         <div
-                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-buttonPrimary rounded-full top-1/2"/>
+                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-primary-700 rounded-full top-1/2"/>
                     </div>
                     <div
                         className="relative p-4 my-6 text-gray-800  bg-white rounded-xl col-start-6 col-end-10 mr-auto">
@@ -61,19 +61,19 @@ const Roadmap = () => {
                     <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                         <div className="flex items-center justify-center w-6 h-full">
                             <div
-                                className="w-1 h-full bg-buttonPrimary rounded-t-full "></div>
+                                className="w-1 h-full bg-primary-700 rounded-t-full "></div>
                         </div>
                         <div
-                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-buttonPrimary rounded-full top-1/2"/>
+                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-primary-700 rounded-full top-1/2"/>
                     </div>
                 </div>
                 <div className="flex md:contents">
                     <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
                         <div className="flex items-center justify-center w-6 h-full">
-                            <div className="w-1 h-full bg-buttonPrimary"/>
+                            <div className="w-1 h-full bg-primary-700"/>
                         </div>
                         <div
-                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-buttonPrimary rounded-full top-1/2"/>
+                            className="absolute w-6 h-6 -mt-3 bg-white border-4 border-primary-700 rounded-full top-1/2"/>
                     </div>
                     <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
                         <h3 className="text-lg font-semibold lg:text-xl">Swap Utility to Toncoin Currency (KLO)</h3>

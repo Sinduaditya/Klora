@@ -14,7 +14,7 @@ const faqData = [
     {
         id:3,
         question: 'Apakah dengan mengupgrade NFT maka akan menaikan nilai tukar Utilitas BTL saya ?',
-        answer: 'Benar sekali, dengan anda membeli NFT secara tidak langsung anda akan langsung berkontribusi terhadap penanaman pohon yang ada di hutan konservasi dari KLORA dan pastinya juga akan meningkatkan nilai tukar ' +
+        answer: 'Benar sekali, dengan anda membeli NFT secara tidak langsung anda akan langsung berkontribusi terhadap penanaman pohon yang ada di hutan konservasi dari Klora dan pastinya juga akan meningkatkan nilai tukar ' +
             'Utilitas BTL terhadap koin KLO !'
     }
 
@@ -29,7 +29,7 @@ export default function FAQPage() {
                     <h1 className="text-xl font-semibold text-black text-center md:text-[20px]">
                         Informasi Lebih lanjut   
                     </h1>
-                    <h1 className="text-[2rem] mb-16 tracking-tight text-center md:text-[3rem] font-bold text-buttonPrimary leading-[110%] mt-5">
+                    <h1 className="text-[2rem] mb-16 tracking-tight text-center md:text-[3rem] font-bold text-primary-700 leading-[110%] mt-5">
                         FAQ
                     </h1>
                     <div className="flow-root">

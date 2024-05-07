@@ -6,8 +6,8 @@ function Klora() {
                 <div className="grid xl:max-w-5xl mx-auto gap-16 md:flex justify-between items-center space-x-18 px-10 xl:px-0">
                     {/* text */}
                     <div className="flex flex-col">
-                        <div className="mt-10  fle mb-10">
-                            <h1 className="font-bold text-buttonPrimary text-5xl">
+                        <div className="mt-10 mb-10">
+                            <h1 className="font-bold text-primary-700 text-5xl">
                                 Klora
                             </h1>
                             <p className="text-xl mt-10">
