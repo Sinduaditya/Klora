@@ -2,7 +2,7 @@ import  { useState } from 'react';
 
 const userData = {
     id: 1,
-    name: 'John Doe',
+    name: 'Bastian',
     walletAddress: '0xabc123',
     totalBottles: 50,
     isVerified: false,
@@ -29,7 +29,7 @@ export default function Volunteer() {
             <h1 className="text-3xl font-semibold mb-4">List User</h1>
             <div className="bg-white p-4 rounded-md shadow-md">
                 <div className="flex items-center mb-2">
-                    <span className="mr-2">Name:</span>
+                    <span className="mr-2">Nama:</span>
                     <span className="font-semibold">{user.name}</span>
                 </div>
                 <div className="flex items-center mb-2">
@@ -37,7 +37,7 @@ export default function Volunteer() {
                     <span className="font-semibold">{user.walletAddress}</span>
                 </div>
                 <div className="flex items-center mb-2">
-                    <span className="mr-2">Total Bottles:</span>
+                    <span className="mr-2">Total Botol:</span>
                     <input
                         type="number"
                         value={user.totalBottles}
@@ -62,7 +62,7 @@ export default function Volunteer() {
                 </div>
                 {showNotification && (
                     <div className="bg-green-200 text-green-800 p-2 rounded-md mb-2">
-                        User successfully verified!
+                        Botol sukses divertifikasi !
                     </div>
                 )}
             </div>
