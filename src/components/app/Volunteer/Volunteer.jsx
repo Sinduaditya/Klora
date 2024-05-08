@@ -1,8 +1,10 @@
-import  { useState } from 'react';
+import React, { useState } from 'react';
+import {Eye} from "iconsax-react";
 
+// Contoh data pengguna
 const userData = {
     id: 1,
-    name: 'Bastian',
+    name: 'Sebastian',
     walletAddress: '0xabc123',
     totalBottles: 50,
     isVerified: false,
@@ -10,62 +12,73 @@ const userData = {
 
 export default function Volunteer() {
     const [user, setUser] = useState(userData);
-    const [showNotification, setShowNotification] = useState(false);
+    const [showDetail, setShowDetail] = useState(false); // State untuk menampilkan detail pengguna
+    const [isVerified, setIsVerified] = useState(user.isVerified);
+    const [verifiedNotification, setVerifiedNotification] = useState('');
 
-    const handleEditTotalBottles = (e) => {
-        setUser({ ...user, totalBottles: e.target.value });
+    const handleShowDetail = () => {
+        setShowDetail(!showDetail);
     };
 
     const handleVerify = () => {
-        setUser({ ...user, isVerified: true });
-        setShowNotification(true);
-        setTimeout(() => {
-            setShowNotification(false);
-        }, 3000); // hidden notif
+        setIsVerified(true);
+        setVerifiedNotification('Botol tervertifikasi.');
+        // Update data pengguna jika perlu
+        setUser(prevUser => ({ ...prevUser, isVerified: true }));
     };
 
     return (
         <div className="container mx-auto py-8">
-            <h1 className="text-3xl font-semibold mb-4">List User</h1>
-            <div className="bg-white p-4 rounded-md shadow-md">
-                <div className="flex items-center mb-2">
-                    <span className="mr-2">Nama:</span>
+            <h1 className="text-3xl font-semibold mb-4">List all users</h1>
+
+            {/* Card Pengguna */}
+            <div
+                className="bg-white p-4 rounded-md shadow-md cursor-pointer"
+                onClick={handleShowDetail}
+            >
+                <div className="flex justify-between  mb-2">
                     <span className="font-semibold">{user.name}</span>
+                    <span className="font-medium bg-primary-600 text-white py-1 px-3 rounded-md">Detail</span>
                 </div>
-                <div className="flex items-center mb-2">
-                    <span className="mr-2">Wallet Address:</span>
-                    <span className="font-semibold">{user.walletAddress}</span>
-                </div>
-                <div className="flex items-center mb-2">
-                    <span className="mr-2">Total Botol:</span>
-                    <input
-                        type="number"
-                        value={user.totalBottles}
-                        onChange={handleEditTotalBottles}
-                        className="w-24 px-2 py-1 border rounded-md"
-                    />
-                </div>
-                <div className="flex items-center gap-4 mb-2">
-                    {user.isVerified ? (
-                        <span className="text-green-500 font-semibold">Verified</span>
-                    ) : (
-                        <button
-                            className="px-3 py-1 bg-blue-500 text-white rounded-md mr-2 hover:bg-blue-700"
-                            onClick={handleVerify}
-                        >
-                            Verify
-                        </button>
-                    )}
-                    <button className="px-3 py-1 bg-green-500 text-white rounded-md hover:bg-green-700">
-                        Edit
-                    </button>
-                </div>
-                {showNotification && (
-                    <div className="bg-green-200 text-green-800 p-2 rounded-md mb-2">
-                        Botol sukses divertifikasi !
-                    </div>
-                )}
             </div>
+
+            {/* Detail Pengguna */}
+            {showDetail && (
+                <div className="bg-white p-4 rounded-md shadow-md mt-4">
+                    <div className="flex items-center mb-2">
+                        <span className="mr-2">Name:</span>
+                        <span className="font-semibold">{user.name}</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                        <span className="mr-2">Wallet Address:</span>
+                        <span className="font-semibold">{user.walletAddress}</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                        <span className="mr-2">Total Botol:</span>
+                        <input
+                            type="number"
+                            className="border rounded-md px-2 py-1"
+                            value={user.totalBottles}
+                            onChange={(e) => setUser(prevUser => ({ ...prevUser, totalBottles: e.target.value }))}
+                        />
+                    </div>
+                    <div className="mb-2">
+                        {!isVerified && (
+                            <button className="ml-4 font-medium bg-primary-600 hover:bg-primary-700 text-white px-6 py-1 rounded-md"
+                                    onClick={handleVerify}
+                            >
+                                Verify
+                            </button>
+                        )}
+                    </div>
+                    {/* Notifikasi Vertifikasi */}
+                    {verifiedNotification && (
+                        <div className="mt-4 bg-primary-500 text-white p-2 rounded-md">
+                            {verifiedNotification}
+                        </div>
+                    )}
+                </div>
+            )}
         </div>
     );
 }
