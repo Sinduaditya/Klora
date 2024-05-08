@@ -75,7 +75,7 @@ const MyProfile = () => {
                 {/* END NFT yang dimiliki */}
             </div>
             <button
-                className="w-full py-2 px-4 bg-buttonPrimary text-white rounded-md hover:bg-primary-600 transition duration-300"
+                className="w-full py-2 px-4 bg-primary-700 text-white rounded-md hover:bg-primary-600 transition duration-300"
                 onClick={() => {
                     // Logika untuk logout
                 }}
