@@ -2,13 +2,13 @@
 const faqData = [
     {
         id: 1,
-        question: 'Bagaimana cara bergabung dengan klora menjadi seorang volunteer yang akan menerima botol sekali pakai?',
+        question: 'Bagaimana cara bergabung dengan klora menjadi seorang Volunteer yang akan menerima botol sekali pakai?',
         answer: 'Dengan Cara melakukan pendaftaran di bagian Contact Us',
     },
     {
         id: 2,
         question: 'Apa yang saya dapatkan ketika bergabung sebagai user di Klora ?',
-        answer: 'Yang anda dapatkan adalah kemudahan menjual botol air minum sekali pakai yang langsung terhubung dengan para volunteer kami yang  tersebar di semarang' +
+        answer: 'Yang anda dapatkan adalah kemudahan menjual botol air minum sekali pakai yang langsung terhubung dengan para Volunteer kami yang  tersebar di semarang' +
             ', dan ketika anda menjual botol anda maka akan mendapatkan token utilitas yang dapat di tukar dengan crypto curency KLO!',
     },
     {

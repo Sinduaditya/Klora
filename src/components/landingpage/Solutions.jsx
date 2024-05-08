@@ -13,7 +13,7 @@ export default function Solutions() {
             id: 2,
             subHeading: "#Swap",
             heading: "Swap Utility to Crypto Currency",
-            desc: "Setiap orang yang melakukan pengumpulan botol bekas ke volunteer terdekat akan mendapatka token Utility yang nantinya toker tersebut bisa di swap menjadi Currency Klorya yakni token KLO, dan juga token tersebut dapat di pergunakan di market Currency.",
+            desc: "Setiap orang yang melakukan pengumpulan botol bekas ke Volunteer terdekat akan mendapatka token Utility yang nantinya toker tersebut bisa di swap menjadi Currency Klorya yakni token KLO, dan juga token tersebut dapat di pergunakan di market Currency.",
             img: "image_1.png",
         },
         {

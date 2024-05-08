@@ -10,6 +10,7 @@ import MyProfile from "./pages/app/MyProfile";
 import Login from "./pages/auth/Login.jsx";
 import Signup from "./pages/auth/Signup.jsx";
 import {FourOhFourOhFour} from "./components/landingpage/index.jsx";
+import Volunteer from "./components/app/Volunteer/Volunteer.jsx";
 
 
 export default function App() {
@@ -44,6 +45,10 @@ export default function App() {
                 {
                     path: "/app",
                     element: <Home />,
+                },
+                {
+                    path: "/app/volunteer",
+                    element: <Volunteer />,
                 },
                 {
                     path: "/app/calculator",
