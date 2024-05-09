@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 function AreYouReady() {
   return (
-    <div  className="w-full text-text font-outfit pt-[10vh] md:pt-[2.5vh] mt-5 md:mt-10">
+    <div id="contactUs" className="w-full text-text font-outfit pt-[10vh] md:pt-[2.5vh] mt-5 md:mt-10">
       <div className="xl:max-w-5xl mx-auto flex items-center space-x-18 px-10 xl:px-0 flex-col space-y-10">
         <article>
           <h1 className="text-xl font-semibold text-black text-center md:text-[20px]">

@@ -1,5 +1,6 @@
-import Card from "./Card.jsx";
 import "aos/dist/aos.css";
+import AOS from "aos";
+import {useEffect} from "react";
 
 function Problem() {
     const trash = [
@@ -16,6 +17,12 @@ function Problem() {
             img: "/botol3.jpg",
         },
     ];
+    useEffect(() => {
+        AOS.init({
+            delay: 300,
+            duration: 800,
+        });
+    });
     return (
         <div className="w-full text-text font-outfit pt-[10vh] md:pt-[2.5vh] mt-5 md:mt-10 mb-16">
             <div className="xl:max-w-5xl mx-auto flex items-center space-x-18 px-10 xl:px-0 flex-col space-y-10">
@@ -42,6 +49,8 @@ function Problem() {
                         <img
                             key={index}
                             alt=""
+                            data-aos="fade-up"
+                            data-aos-duration="800"
                             src={item.img}
                             className="h-56 rounded-lg shadow sm:h-48 lg:h-56 w-full object-cover"
                         />

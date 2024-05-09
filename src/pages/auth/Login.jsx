@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 export default function Login(){
     return(
         <>
-            <section className="flex bg-white flex-col items-center pt-6">
+            <section id="login" className="flex bg-white flex-col items-center pt-6">
                 <div
                     className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 d">
                     <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
