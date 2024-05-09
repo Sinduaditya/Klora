@@ -1,8 +1,18 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import {useEffect} from "react";
 
 function Klora() {
+    useEffect(() => {
+        AOS.init({
+            delay: 300,
+            duration: 800,
+        });
+    });
     return (
         <>
-            <div className="w-full mt-16 text-text font-outfit md:pt-[1vh] mb-12">
+            <div id="about" className="w-full mt-16 text-text font-outfit md:pt-[1vh] mb-12">
                 <div className="grid xl:max-w-5xl mx-auto gap-16 md:flex justify-between items-center space-x-18 px-10 xl:px-0">
                     {/* text */}
                     <div className="flex flex-col">
@@ -71,7 +81,10 @@ function Klora() {
                     </div>
 
                     {/* mockup */}
-                    <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+                    <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]"
+                         data-aos="zoom-in-up"
+                         data-aos-duration="1000"
+                    >
                         <div className="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[72px] rounded-l-lg"></div>
                         <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[124px] rounded-l-lg"></div>
                         <div className="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -left-[17px] top-[178px] rounded-l-lg"></div>
@@ -80,12 +93,12 @@ function Klora() {
                             <img
                                 src="/mockup.jpg"
                                 className="dark:hidden w-[272px] h-[572px]"
-                                alt=""
+                                alt="mockup"
                             />
                             <img
                                 src="/mockup.jpg"
                                 className="hidden dark:block w-[272px] h-[572px]"
-                                alt=""
+                                alt="mockup"
                             />
                         </div>
                     </div>

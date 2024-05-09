@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { Link as ScrollLink } from 'react-scroll';
+import {useState} from "react";
 import { Transition } from "@headlessui/react";
 import { HambergerMenu, CloseSquare } from "iconsax-react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const menus = [
-    { name: "How it works", to: "#how" },
-    { name: "About", to: "#about" },
-    { name: "Contact Us", to: "#contact" },
+    { name: "How it works", to: "howItWorks" },
+    { name: "About", to: "about" },
+    { name: "Contact Us", to: "contactUs" },
 ];
 
 function MenuInNavbar() {
@@ -19,7 +20,15 @@ function MenuInNavbar() {
                             className="font-normal text-neutral-400 hover:text-neutral-900 hover:font-semibold"
                             key={menu.name}
                         >
-                            <Link to={menu.to}>{menu.name}</Link>
+                            <ScrollLink
+                                to={menu.to}
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={700}
+                            >
+                                {menu.name}
+                            </ScrollLink>
                         </li>
                     ))}
                 </ul>
@@ -65,18 +74,19 @@ function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <span className="text-2xl font-semibold">
+                            <Link
+                                to="/"
+                                className="text-3xl font-semibold"
+                            >
                                 Klora
-                            </span>
+                            </Link>
                         </div>
                     </div>
                     <div className="hidden md:block">
                         <div className="ml-4 flex items-center md:ml-6">
-                            {/* Tambahkan item-menu di sini */}
                             <MenuInNavbar />
                         </div>
                     </div>
-                    {/* LOGIN BUTTON */}
                     <div className="hidden md:flex">
                         <CtaButton />
                     </div>
@@ -117,7 +127,6 @@ function Navbar() {
                 {(ref) => (
                     <div ref={ref} className="md:hidden " id="mobile-menu">
                         <div className="grid gap-3 px-2 pt-2 pb-6 space-y-1 sm:px-3">
-                            {/* Tambahkan item-menu di sini */}
                             <MenuInNavbar />
                             <CtaButton />
                         </div>

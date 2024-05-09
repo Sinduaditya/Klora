@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {Link} from "react-router-dom";
 
 function Hero() {
     useEffect(() => {
@@ -26,17 +27,17 @@ function Hero() {
                         menjaga Iklim <span className=""> bersama klora</span>
                     </p>
                     <div className="">
-                        <button className="w-fit py-3 px-5 text-white font-semibold bg-primary-700 hover:bg-primary-800 rounded-full">
+                        <Link to="/login" className="w-fit py-3 px-5 text-white font-semibold bg-primary-700 hover:bg-primary-800 rounded-full">
                             Coba sekarang
-                        </button>
+                        </Link>
                     </div>
                 </article>
                 <img
-                    src="/hero_image.png"
+                    src="/Hero.png"
                     alt="Hero Image"
                     width={495}
                     height={467}
-                    data-aos="zoom-in-up"
+                    data-aos="fade-left"
                     data-aos-duration="1000"
                     className="w-[250.5px] h-[230px] md:w-[495px] md:h-[467px] lg:order-2  mx-auto"
                 />

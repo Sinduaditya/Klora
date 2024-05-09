@@ -7,28 +7,28 @@ export default function Solutions() {
             subHeading: "#Emission Calculator",
             heading: "Plastic Bottle Emission Calculator",
             desc: "Kalkulator Jejak Emisi Botol Plastik Klora membantu pengguna menghitung dampak lingkungan dari penggunaan botol plastik. Dengan data tentang jumlah dan jenis botol yang digunakan, kalkulator ini memberikan perkiraan emisi plastik yang terkait.",
-            img: "image_1.png",
+            img: "Calculator.png",
         },
         {
             id: 2,
             subHeading: "#Swap",
             heading: "Swap Utility to Crypto Currency",
             desc: "Setiap orang yang melakukan pengumpulan botol bekas ke Volunteer terdekat akan mendapatka token Utility yang nantinya toker tersebut bisa di swap menjadi Currency Klorya yakni token KLO, dan juga token tersebut dapat di pergunakan di market Currency.",
-            img: "image_1.png",
+            img: "Swap.png",
         },
         {
             id: 3,
             subHeading: "#NFT Bag",
             heading: "Upgradeable NFT",
             desc: "Setiap user yang mendaftar akan mendapatkan NFT dengan harga  RP 0 , namun nft tersebut hanya dapat membuat user mengumpulkan 10 botol per-satu minggu, dan jika ingin mengupgrade maka harus membeli NFT yang tersedia di market Klora.",
-            img: "image_2.png",
+            img: "NFT.png",
         },
         {
             id: 4,
             subHeading: "#Kemana botolnya ?",
             heading: "Klora Recycle",
             desc: "Klora mengambil tanggung jawab untuk mengelola botol bekas dengan baik. Botol-botol yang kami kumpulkan akan disortir dan diproses menjadi bijih plastik yang dapat digunakan kembali. Melalui program daur ulang kami, kami berkomitmen untuk mengurangi limbah plastik dan mendorong siklus ekonomi yang berkelanjutan.",
-            img: "image_2.png",
+            img: "Recycle.png",
         },
     ];
 
