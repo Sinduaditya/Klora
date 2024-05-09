@@ -1,9 +1,13 @@
 import { useState } from "react";
+import {Link} from "react-router-dom";
+import {ArrowUp, BuyCrypto,  CloseCircle} from "iconsax-react";
 
 function Shopping() {
     const [sortBy, setSortBy] = useState("default");
-
     const [searchQuery, setSearchQuery] = useState("");
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [purchaseSuccess, setPurchaseSuccess] = useState(false);
+    const [isOwned, setIsOwned] = useState(false);
 
     const handleChange = (e) => {
         setSortBy(e.target.value);
@@ -11,6 +15,25 @@ function Shopping() {
 
     const handleSearchChange = (e) => {
         setSearchQuery(e.target.value);
+    };
+
+    const handleShowDetails = (product) => {
+        setSelectedProduct(product);
+    };
+
+    const handleCloseDetails = () => {
+        setSelectedProduct(null);
+        setPurchaseSuccess(false); // Reset purchase success message
+    };
+
+
+    const handlePurchase = () => {
+        // Perform purchase logic here
+        setPurchaseSuccess(true);
+        setIsOwned(true);
+        setTimeout(() => {
+            setPurchaseSuccess(false);
+        }, 2000); // Hide success message after 2 seconds
     };
 
     const sortProducts = () => {
@@ -127,14 +150,16 @@ function Shopping() {
                     <ul className="grid gap-4 sm:grid-cols-2">
                         {sortProducts().map((produknya) => (
                             <li key={produknya.id}>
-                                <a
-                                    href="#"
+                                <Link
+                                    to="#"
                                     className="group block overflow-hidden"
+                                    onClick={() => handleShowDetails(produknya)}
+
                                 >
                                     <img
                                         src={produknya.productImages}
                                         alt={produknya.name}
-                                        className="size-44 object-cover transition duration-500 group-hover:scale-150"
+                                        className="size-44 object-cover"
                                     />
 
                                     <div className="relative bg-white pt-3">
@@ -154,12 +179,71 @@ function Shopping() {
                                             </span>
                                         </p>
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
                 </section>
             </div>
+            {selectedProduct && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-4 border border-gray-300 rounded-md max-w-sm">
+                        <button onClick={handleCloseDetails}>
+                            <CloseCircle variant="Bulk" className="text-primary-600"/>
+                        </button>
+                        <div className=" flex flex-col justify-center items-center text-center">
+                            <h4 className="text-md font-bold">{selectedProduct.productName}</h4>
+                            <img src={selectedProduct.productImages} className="size-40 mt-2" alt="NFT"/>
+                        </div>
+                        <div className="mx-8 my-2">
+                            <div className="mt-2 font-medium">
+                                <div className="flex justify-between">
+                                    <p>Level : {selectedProduct.level}</p>
+                                    <p>Harga : {selectedProduct.hargaToken} KLO</p>
+                                </div>
+                                <div className="mt-2">
+                                    <p className="font-bold">Penambahan</p>
+                                    <p className="flex items-center gap-2">Botol/Minggu : +20
+                                        <ArrowUp className="w-4 h-4 text-primary-600" variant="Bulk"/>
+                                    </p>
+                                    <p className="flex items-center gap-2">
+                                        Swap Currency : + 0.001 KLO
+                                        <ArrowUp className="w-4 h-4 text-primary-600" variant="Bulk"/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            {isOwned ? (
+                                <button
+                                    className="mt-4 bg-primary-700 text-white px-16 py-1 rounded-md disabled:opacity-50"
+                                    disabled
+                                >
+                                    Sudah Dimiliki
+                                </button>
+                            ) : (
+                                <button
+                                    onClick={handlePurchase}
+                                    className="mt-4 bg-primary-700 hover:bg-primary-600 text-white px-16 py-1 rounded-md"
+                                >
+                                    Beli
+                                </button>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Purchase success popup */}
+            {purchaseSuccess && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div
+                        className="bg-white p-4 border border-gray-300 rounded-md max-w-sm flex flex-col text-center items-center">
+                        <BuyCrypto className="text-green-500 w-12 h-12 mb-2"/>
+                        <p className="text-lg font-bold">Pembelian <br/> {selectedProduct.productName} <br/> Sukses!</p>
+                    </div>
+                </div>
+            )}
         </>
     );
 }
