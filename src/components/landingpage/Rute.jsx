@@ -25,7 +25,7 @@ const Roadmap = () => {
                     >
                         <h3 className="text-lg font-semibold lg:text-xl">Pendaftaran User</h3>
                         <p className="mt-2 leading-6">
-                            Di fase ini user akan melakukan registrasi dan login terlebih dahulu. lalu user akan di
+                            Di fase ini user akan melakukan registrasi dan login terlebih dahulu dengan mengaitkan Wallet Crypto nya. lalu user akan di
                             arahkan ke halaman dashboard dari Klora.
                         </p>
                         <span className="absolute text-sm text-text font-bold -top-5 left-2 whitespace-nowrap">

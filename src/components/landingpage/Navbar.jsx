@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll';
 import {useState} from "react";
 import { Transition } from "@headlessui/react";
-import { HambergerMenu, CloseSquare } from "iconsax-react";
+import {HambergerMenu, CloseSquare, WalletMoney} from "iconsax-react";
 import {Link} from "react-router-dom";
 
 const menus = [
@@ -45,18 +45,10 @@ function CtaButton() {
                     <li className="font-semibold  text-white">
                         <Link
                             to="/login"
-                            className="py-2 px-4 md:px-8 bg-primary-700 rounded-full hover:bg-primary-900"
+                            className="py-2 flex gap-2 px-4 md:px-8 bg-primary-700 rounded-full hover:bg-primary-900"
                         >
-                            <span className="text-xs md:text-sm">Masuk</span>
-                        </Link>
-                    </li>
-
-                    <li className="font-semibold  text-white">
-                        <Link
-                            to="/signup"
-                            className="py-2 px-4 md:px-8 bg-primary-700 rounded-full hover:bg-primary-900"
-                        >
-                            <span className="text-xs md:text-sm">Daftar</span>
+                            <WalletMoney className="text-white h-5 w-6" variant="Bulk"/>
+                            <span className="text-xs md:text-sm">Connect Wallet</span>
                         </Link>
                     </li>
                 </ul>
