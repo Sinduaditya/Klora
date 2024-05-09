@@ -91,12 +91,12 @@ function Klora() {
                         <div className="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -right-[17px] top-[142px] rounded-r-lg"></div>
                         <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
                             <img
-                                src="/mockup.jpg"
+                                src="/mockup.png"
                                 className="dark:hidden w-[272px] h-[572px]"
                                 alt="mockup"
                             />
                             <img
-                                src="/mockup.jpg"
+                                src="/mockup.png"
                                 className="hidden dark:block w-[272px] h-[572px]"
                                 alt="mockup"
                             />
