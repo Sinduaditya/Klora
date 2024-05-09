@@ -26,7 +26,7 @@ function Hero() {
                         Mulai langkah awalmu dalam mengurangi emisi karbon dan
                         menjaga Iklim <span className=""> bersama klora</span>
                     </p>
-                    <div className="">
+                    <div className="mt-5">
                         <Link to="/login" className="w-fit py-3 px-5 text-white font-semibold bg-primary-700 hover:bg-primary-800 rounded-full">
                             Coba sekarang
                         </Link>

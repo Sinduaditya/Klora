@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import {Eye} from "iconsax-react";
+import { useState } from 'react';
 
 // Contoh data pengguna
 const userData = {
@@ -28,16 +27,24 @@ export default function Volunteer() {
     };
 
     return (
-        <div className="container mx-auto py-8">
-            <h1 className="text-3xl font-semibold mb-4">List all users</h1>
-
+        <div className="container mx-auto">
+            <div className="mb-6 p-3 shadow-md rounded-md">
+                <h1 className="font-semibold text-2xl">Halo Calvin 👋</h1>
+                <div className="flex justify-between  mt-2 pb-1.5">
+                    <h2 className="text-neutral-700 font-medium">
+                        Anda berhasil menampung
+                    </h2>
+                    <p className="text-sm  text-neutral-400">100 Botol</p>
+                </div>
+            </div>
+            <h1 className="text-xl font-semibold mb-4">List all users</h1>
             {/* Card Pengguna */}
             <div
                 className="bg-white p-4 rounded-md shadow-md cursor-pointer"
                 onClick={handleShowDetail}
             >
                 <div className="flex justify-between  mb-2">
-                    <span className="font-semibold">{user.name}</span>
+                    <span className="font-medium text-neutral-700">{user.name}</span>
                     <span className="font-medium bg-primary-600 text-white py-1 px-3 rounded-md">Detail</span>
                 </div>
             </div>

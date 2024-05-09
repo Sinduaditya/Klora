@@ -21,26 +21,20 @@ function TopBar() {
                     <div className="flex gap-2  items-center">
                         {/* Angka token */}
                         <p className="text-sm font-semibold text-neutral-600">
-                            000000
+                            100 BTL
                         </p>
                         {/* Angka token END*/}
-                        <Moneys
-                            className="w-7 h-7 text-primary-700"
-                            variant="Bulk"
-                        />
+                        <img src="/BTLC.svg" alt="utility btl" className="w-7 h-7"/>
                     </div>
                     {/* END UTILITY TOKEN */}
                     {/* TOKEN */}
                     <div className="flex gap-2  items-center">
                         {/* Angka token */}
                         <p className="text-sm font-semibold text-neutral-600">
-                            000000
+                            0.001 KLO
                         </p>
                         {/* Angka token END */}
-                        <Bitcoin
-                            className="w-7 h-7 text-primary-700"
-                            variant="Bulk"
-                        />
+                        <img src="/KLOC.svg" alt="crypto KLO" className="w-7 h-7"/>
                     </div>
                     {/* END TOKEN */}
                 </div>

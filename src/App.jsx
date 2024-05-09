@@ -7,8 +7,6 @@ import LandingPages from "./pages/LandingPage/LandingPages.jsx";
 import Calculator from "./pages/app/Calculator";
 import Shopping from "./pages/app/Shopping";
 import MyProfile from "./pages/app/MyProfile";
-import Login from "./pages/auth/Login.jsx";
-import Signup from "./pages/auth/Signup.jsx";
 import {FourOhFourOhFour} from "./components/landingpage/index.jsx";
 import Volunteer from "./components/app/Volunteer/Volunteer.jsx";
 
@@ -22,14 +20,6 @@ export default function App() {
                 {
                     path: "/",
                     element: <LandingPages />,
-                },
-                {
-                    path: "/login",
-                    element: <Login />,
-                },
-                {
-                    path: "/signup",
-                    element: <Signup />,
                 },
                 {
                     path: "*",
@@ -61,6 +51,10 @@ export default function App() {
                 {
                     path: "/app/profile",
                     element: <MyProfile />,
+                },
+                {
+                    path: "*",
+                    element: <FourOhFourOhFour />,
                 },
             ],
         },
